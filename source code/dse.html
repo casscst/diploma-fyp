@@ -1,0 +1,92 @@
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            /* Global styles */
+            body {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            background-color: #000000;
+            }
+
+            .header {
+            background-color: #FFFF00;
+            padding: 20px;
+            }
+            
+            /* Main content section */
+            main {
+            padding: 20px;
+            }
+
+            .container {                
+                padding: 20px;
+                margin: 0 auto;
+                max-width: 960px;
+            } 
+            
+            .center {                
+                margin-left: auto;
+                margin-right: auto;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body class="container"> 
+        <h1 class="header" style="text-align: center">Diploma in Software Engineering</h1>
+        <div class="center">
+            <img src="data:image/png;base64,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" alt="icats-uc">
+        </div></br>
+        
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0" style="color:white">
+            Programme code: R2/481/4/0051 (07/25) A6144 </br>
+            Mode of study: Full Time </br>
+            Duration: 2.5 years </br>
+            Graduating credit: 96 </br>
+            Intakes: March and August </br>            
+        </div></br>
+
+
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0" style="color:white">
+            <h2 style="color:yellow">Introduction</h2>
+            Software Engineering plays a vital role in the installation and development of any business operating system. The Diploma in 
+            Software Engineering programme provides opportunities to further develop analysis, design and development skills through the 
+            exposure of emerging technologies.
+        </div></br>
+        
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0" style="color:white">
+            <h2 style="color:yellow">Objective</h2>
+            This course studies the best approach to design, build and maintain software systems. It makes use of many of the technical results
+            of computer science, especially programming, and application of theory in the process of system design and construction.
+        </div></br>
+
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0" style="color:white">
+            <h2 style="color:yellow">Career Opportunities</h2>
+            Software Engineers will be in demand for their software construction skills and experience of working in a team. Graduates will 
+            be able to participate in software design and development, software team management, technical support and research. Successful 
+            completion of this diploma will also enable them to pursue undergraduate degree programs locally and abroad.
+        </div></br>
+
+        <div class="relative flex items-top justify-center min-h-screen sm:items-center py-4 sm:pt-0" style="color:white">
+            <h2 style="color:yellow">Requirements</h2>
+            . A pass in SPM with at least credit in any 3 subjects inclusive of Mathematics or any equivalent qualification; OR</br>
+            . A pass in Sijil Tinggi Persekolahan Malaysia (STPM), with a minimum of Grade C (GP 2.0) in any subject or any equivalent 
+              qualification and a credit in Mathematics at SPM level or its equivalent; OR</br>
+            . A pass in Sijil Tinggi Agama Malaysia (STAM) with a minimum grade of Maqbul (pass) and a credit in Mathematics at SPM level or 
+              its equivalent; OR</br>
+            . A pass in SKM Level 3, and a credit in Mathematics at SPM level or its equivalent AND (for this entry, bridging programme will
+             be offered together with the ongoing curriculum within their studies for 2 semesters); OR</br>
+            . A pass in any qualifications equivalent to Certificate (Level 3, MQF) and a credit in Mathematics at SPM level or its equivalent.</br>
+
+            Candidates without a credit in mathematics at SPM level or its equivalent may be admitted if the Certificate programme contains 
+            subjects in mathematics that are equivalent to mathematics at SPM level. Candidate with a credit in computing-related subject at 
+            SPM level or its equivalent may be given preferential consideration.
+        </div></br>
+
+        
+    </body> 
+    
+</html>
